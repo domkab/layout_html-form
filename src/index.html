@@ -10,12 +10,10 @@
   </head>
   <body>
     <h1>HTML Form</h1>
-
     <script type="text/javascript" src="./main.js"></script>
     <form class="form"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post">
-
       <fieldset>
         <legend>Personal Information</legend>
         <label class="form_field">
@@ -26,7 +24,6 @@
             name="surname"
             autocomplete="off">
         </label>
-
         <label class="form_field">
           Name:
           <input
@@ -35,7 +32,6 @@
             name="name"
             autocomplete="off">
         </label>
-
         <label for="age" class="form_field">
           How old are You?
           <input
@@ -47,7 +43,6 @@
             max="100"
             value="12">
         </label>
-
         <label for="date_of_birth" class="form_field">
           Full date of birth:
           <input
@@ -56,7 +51,6 @@
             name="date_of_birth"
             id="date_of_birth">
         </label>
-
         <label class="form_field">
           <input
             class="form_inputs"
@@ -66,7 +60,6 @@
           I accept the terms of the agreement
         </label>
       </fieldset>
-
       <fieldset>
         <legend>Registration</legend>
         <label class="form_field">
@@ -78,7 +71,6 @@
             placeholder="email@example.com"
             required>
         </label>
-
         <label class="form_field">
           Password:
           <input
@@ -90,10 +82,8 @@
             maxlength="32">
         </label>
       </fieldset>
-
       <fieldset>
         <legend>An interesting fact about you?</legend>
-
         <label for="cat_yes">
           Do you love cats?
           <input
@@ -104,7 +94,6 @@
             value="yes">
           Yes
         </label>
-
         <label for="cat_no">
           <input
             class="form_inputs"
@@ -114,7 +103,6 @@
             value="no">
           No
         </label>
-
         <label for="fav_color" class="form_field">
           What is your favorite color?
           <input
@@ -123,7 +111,6 @@
             id="fav_color"
             name="favourite_color">
         </label>
-
         <label for="goes_to_sleep" class="form_field">
           What time do you go to bed?
           <input
@@ -132,22 +119,19 @@
             name="goes_to_sleep"
             id="goes_to_sleep">
         </label>
-
         <label for="car_brands" class="form_field form_inputs">
           What are your favourite car brands?
-
           <select
             name="car_brands"
             id="car_brands"
             required
             multiple>
-            <option value="" selected disabled>Select</option>
+            <option value="-" selected disabled>Select</option>
             <option value="BMW">BMW</option>
             <option value="MERCEDES">MERCEDES</option>
             <option value="AUDI">AUDI</option>
           </select>
         </label>
-
         <label for="rate_us" class="form_field">
           How do You rate our work?
           <input
@@ -159,7 +143,6 @@
             max="10">
         </label>
       </fieldset>
-
       <fieldset>
         <legend>Additional info</legend>
         <label for="info" class="form_field">
@@ -170,18 +153,18 @@
             cols="15"
             rows="1"></textarea>
         </label>
-
         <label for="recommend" class="form_field">
           Would you recommend us?
-          <select class="form_inputs" name="recommend_us" id="recommend">
+          <select
+            class="form_inputs"
+            name="recommend_us"
+            id="recommend">
+
             <option value="yes" selected>Yes</option>
             <option value="no">No</option>
           </select>
-
         </label>
-
       </fieldset>
-
       <button type="submit">Submit</button>
     </form>
   </body>
