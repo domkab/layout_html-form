@@ -2,34 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+      initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
     <form class="form"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post">
       <fieldset>
-        <legend>Personal Information</legend>
+        <legend>Personal information</legend>
         <label class="form_field">
           Surname:
           <input
             class="form_inputs"
             type="text"
             name="surname"
-            autocomplete="off">
+            autocomplete="off"
+          >
         </label>
-        <label class="form_field">
+        <label class="form_field"
+        >
           Name:
           <input
             class="form_inputs"
             type="text"
             name="name"
-            autocomplete="off">
+            autocomplete="off"
+          >
         </label>
         <label for="age" class="form_field">
           How old are You?
@@ -40,7 +44,8 @@
             id="age"
             min="1"
             max="100"
-            value="12">
+            value="12"
+          >
         </label>
         <label for="date_of_birth" class="form_field">
           Full date of birth:
@@ -48,27 +53,30 @@
             class="form_inputs"
             type="date"
             name="date_of_birth"
-            id="date_of_birth">
+            id="date_of_birth"
+          >
         </label>
         <label class="form_field">
+          I accept the term of the agreement
           <input
             class="form_inputs"
             type="checkbox"
             name="terms"
-            required>
-          I accept the terms of the agreement
+            required
+          >
         </label>
       </fieldset>
       <fieldset>
         <legend>Registration</legend>
         <label class="form_field">
-          Email:
+          E-mail:
           <input
             class="form_inputs"
             type="email"
             name="email"
             placeholder="email@example.com"
-            required>
+            required
+          >
         </label>
         <label class="form_field">
           Password:
@@ -78,7 +86,8 @@
             name="password"
             required
             minlength="5"
-            maxlength="32">
+            maxlength="32"
+          >
         </label>
       </fieldset>
       <fieldset>
@@ -90,7 +99,8 @@
             type="radio"
             id="cat_yes"
             name="cat_lover"
-            value="yes">
+            value="yes"
+          >
           Yes
         </label>
         <label for="cat_no">
@@ -99,7 +109,8 @@
             type="radio"
             id="cat_no"
             name="cat_lover"
-            value="no">
+            value="no"
+          >
           No
         </label>
         <label for="fav_color" class="form_field">
@@ -108,7 +119,8 @@
             class="form_inputs"
             type="color"
             id="fav_color"
-            name="favourite_color">
+            name="favourite_color"
+          >
         </label>
         <label for="goes_to_sleep" class="form_field">
           What time do you go to bed?
@@ -116,7 +128,8 @@
             class="form_inputs"
             type="time"
             name="goes_to_sleep"
-            id="goes_to_sleep">
+            id="goes_to_sleep"
+          >
         </label>
         <label for="car_brands" class="form_field form_inputs">
           What are your favourite car brands?
@@ -124,11 +137,13 @@
             name="car_brands"
             id="car_brands"
             required
-            multiple>
+            multiple
+          >
             <option
               value="null"
               selected
-              disabled>Select</option>
+              disabled>Select
+            </option>
             <option value="BMW">BMW</option>
             <option value="MERCEDES">MERCEDES</option>
             <option value="AUDI">AUDI</option>
@@ -142,7 +157,8 @@
             name="rating"
             id="rate_us"
             min="1"
-            max="10">
+            max="10"
+          >
         </label>
       </fieldset>
       <fieldset>
@@ -153,7 +169,8 @@
             name="additional_info"
             id="info"
             cols="15"
-            rows="1"></textarea>
+            rows="2">
+          </textarea>
         </label>
         <label for="recommend" class="form_field">
           Would you recommend us?
