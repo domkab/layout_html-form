@@ -1,17 +1,18 @@
 .form_field {
   display: block;
+  margin-bottom: 10px;
 }
 
 .form_inputs {
   margin-bottom: 10px;
 }
 
-fieldset {
-  margin: 20px 0;
+.form_box {
+  margin-bottom: 20px;
   padding-bottom: 0;
 }
 
-fieldset:first-of-type {
+.form_box:first-of-type {
   margin-top: 0;
 }
 
