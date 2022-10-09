@@ -113,27 +113,30 @@
       </fieldset>
       <fieldset class="form_box">
         <legend>An interesting fact about you?</legend>
-        <label for="cat_yes">
-          Do you love cats?
-          <input
-            class="form_inputs"
-            type="radio"
-            id="cat_yes"
-            name="cat_lover"
-            value="yes"
-          >
-          Yes
-        </label>
-        <label for="cat_no">
-          <input
-            class="form_inputs"
-            type="radio"
-            id="cat_no"
-            name="cat_lover"
-            value="no"
-          >
-          No
-        </label>
+        <div class="label_cat_answer">
+          <label for="cat_yes">
+            Do you love cats?
+            <input
+              class="form_inputs"
+              type="radio"
+              id="cat_yes"
+              name="cat_lover"
+              value="yes"
+            >
+            Yes
+          </label>
+          <label for="cat_no">
+            <input
+              class="form_inputs"
+              type="radio"
+              id="cat_no"
+              name="cat_lover"
+              value="no"
+            >
+            No
+          </label>
+        </div>
+
         <label
           for="fav_color"
           class="form_field"
@@ -146,6 +149,7 @@
             name="favourite_color"
           >
         </label>
+
         <label
           for="goes_to_sleep"
           class="form_field"
@@ -154,37 +158,34 @@
           <input
             class="form_inputs"
             type="time"
+            step="2"
             name="goes_to_sleep"
             id="goes_to_sleep"
           >
         </label>
+
         <label
           for="car_brands"
           class="form_field form_inputs"
         >
-          What are your favourite car brands?
+          What are your favorite brand of cars?
           <select
             name="car_brands"
             id="car_brands"
             required
             multiple
           >
-            <option
-              value="null"
-              selected
-              disabled
-            >Select
             </option>
             <option value="BMW">BMW</option>
-            <option value="MERCEDES">MERCEDES</option>
-            <option value="AUDI">AUDI</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
           </select>
         </label>
         <label
           for="rate_us"
           class="form_field"
         >
-          How do You rate our work?
+          How do you rate our work?
           <input
             class="form_inputs"
             type="range"
